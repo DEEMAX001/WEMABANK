@@ -43,15 +43,28 @@ header ul li a:hover {
   justify-content: center;
   padding: px;
 }
+.con svg {
+  width: 15px;
+  height: auto;
+}
+
 .con2 {
+  width: auto;
   display: none;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding: px;
+  padding: 2px;
+  display: none;
 }
-
+.con2 p {
+  margin: 0;
+}
+.con2 svg {
+  width: 15px;
+  height: auto;
+}
 ul {
   display: flex;
   gap: 0.8em;
@@ -1329,6 +1342,31 @@ section .okay p {
     rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
+
+.foot {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.line {
+  /* display: flex; */
+  flex-direction: column;
+}
+
+.mad ul,
+.mad ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mad a {
+  display: block !important; /* force block */
+  width: 100%;
+  background-color: #f0f0f0; /* visual check */
+  padding: 5px;
+}
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {
@@ -1336,9 +1374,16 @@ section .okay p {
     display: none;
   }
   .con2 {
-    display: flex;
-    justify-content: space-between;
-    padding: 0%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    padding: 6px 12px;
+    height: auto;
+    width: auto;
+
+    white-space: nowrap;
   }
   .hero-sect {
     display: flex;
@@ -1385,6 +1430,9 @@ section .okay p {
   }
   .con2 {
     display: flex;
+  }
+  .con2 p{
+    font-size: 12px;
   }
   nav .both {
     display: flex;
