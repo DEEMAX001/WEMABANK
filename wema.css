@@ -1300,6 +1300,35 @@ section .okay p {
 .mariam .dwag {
   display: none;
 }
+
+.small h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #981d87;
+}
+
+.small h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #2e323d;
+}
+
+.small {
+  width: 90%;
+  margin: 30px auto;
+}
+.vidcon {
+  padding: 10px;
+  /* border: 1px solid black; */
+  text-align: center;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {
@@ -1470,36 +1499,31 @@ section .okay p {
 }
 
 @media (max-width: 768px) {
-
   .tap {
-    width: 100% auto; 
-    flex-direction: column;       /* ✅ full section width */
-    margin-left:10%;    
-    gap: 10px;  
+    width: 100% auto;
+    flex-direction: column; /* ✅ full section width */
+    margin-left: 10%;
+    gap: 10px;
   }
 
-  .connect1 button{
+  .connect1 button {
     height: auto;
   }
 
   .connect1 {
-    width: 100%;             /* ✅ full width */
-    max-width: 100%;         /* ✅ prevents shrinking */
+    width: 100%; /* ✅ full width */
+    max-width: 100%; /* ✅ prevents shrinking */
     margin: 0;
     /* border: 1px solid black; */
     justify-content: center;
     align-items: center;
   }
 
-  .connect1 img{
+  .connect1 img {
     width: 200px;
     height: 200px;
   }
 
-
-
-
-    
   .dawg {
     flex-direction: column;
     justify-content: center;
