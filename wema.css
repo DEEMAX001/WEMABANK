@@ -247,6 +247,10 @@ nav .both {
   color: #ffffff;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
 .text p {
   font-style: normal;
   font-weight: 400;
@@ -1431,7 +1435,7 @@ section .okay p {
   .con2 {
     display: flex;
   }
-  .con2 p{
+  .con2 p {
     font-size: 12px;
   }
   nav .both {

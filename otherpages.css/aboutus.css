@@ -349,24 +349,23 @@ nav .both {
   color: #000000;
 }
 
-
-.flexx{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    /* border: 1px solid black; */
-    justify-content: center;
-    align-items: center;
+.flexx {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border: 1px solid black; */
+  justify-content: center;
+  align-items: center;
 }
 .flex1 .box {
-    width: 100%;
+  width: 100%;
   max-width: 350px;
-  padding: 35px 20px ;
+  padding: 35px 20px;
   height: auto;
   height: auto;
   /* border: 1px solid black; */
   text-align: center;
-  background-color:#F3F4F6;
+  background-color: #f3f4f6;
 }
 .flexx .flex1 {
   display: flex;
@@ -395,6 +394,79 @@ nav .both {
   color: #4b5563;
 }
 
+.fifth {
+  width: 95%;
+  /* border: 1px solid black; */
+  margin: 20px auto;
+}
+.fifth .contain {
+  display: flex;
+  gap: 10px;
+}
+
+.fifth .contain2 {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 10px; */
+}
+
+.fifth .contain2 span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21.008px;
+  color: #4d5051;
+}
+
+.fifth .contain2 .fa-angle-down {
+  font-size: 12px;
+}
+.fifth p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27.008px;
+  color: #4d5051;
+}
+
+.contain .box {
+  /* border: 1px solid black; */
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+
+@keyframes Cont {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.contain .box:hover {
+  animation: Cont 2s infinite;
+  transition: 2s ease-in-out;
+}
+.contain .box a {
+  text-decoration: none;
+  margin-top: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #858a8b;
+  display: block;
+  /* border: 1px solid black; */
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {
@@ -420,6 +492,17 @@ nav .both {
 }
 
 @media (max-width: 1024px) {
+  .fifth .contain,
+  p {
+    display: none;
+  }
+
+  .fifth .contain2 {
+    display: flex;
+    border-bottom: 1px dotted black;
+    padding: 10px;
+  }
+
   .tap {
     margin-left: 10px;
   }
@@ -575,10 +658,10 @@ nav .both {
 }
 
 @media (max-width: 768px) {
-    .flexx .flex1 {
-  flex-direction: column;
-  gap: 10px;
-}
+  .flexx .flex1 {
+    flex-direction: column;
+    gap: 10px;
+  }
   .third .imgtext-container {
     flex-direction: column;
     width: 100%;
