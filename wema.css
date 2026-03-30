@@ -19,6 +19,8 @@ nav {
   padding: 16px 32px;
   align-items: center;
   background-color: #ffffff;
+  z-index: 999999;
+  position: relative;
 }
 
 header ul li a {
@@ -974,7 +976,7 @@ section .okay p {
   background-size: cover;
   background-position: center;
   /* background-attachment: fixed; */
-  min-height: 300%;
+  /* min-height: 300%; */
 }
 .stats {
   display: grid;
@@ -1599,13 +1601,14 @@ section .okay p {
     align-items: center; */
   }
   .thatleft {
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .thatleft img {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
   }
 
   .three-cards .onecard {

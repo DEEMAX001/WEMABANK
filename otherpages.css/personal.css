@@ -19,6 +19,8 @@ nav {
   padding: 16px 32px;
   align-items: center;
   background-color: #ffffff;
+  position: relative;
+  z-index: 999;
 }
 
 header ul li a {
@@ -273,9 +275,9 @@ nav .both {
   border-radius: 0px;
 }
 
-.fa-arrow-down{
-    font-size: 12px;
-    color: red;
+.fa-arrow-down {
+  font-size: 12px;
+  color: red;
 }
 .part2 .inner span {
   /* display: block; */
@@ -302,7 +304,7 @@ nav .both {
   font-size: 12px;
   border-radius: 5px;
   width: fit-content;
-  height: 20px
+  height: 20px;
 }
 
 .second {

@@ -358,12 +358,8 @@ nav .both {
   align-items: center;
 }
 .flex1 .box {
-  width: 100%;
-  max-width: 350px;
+  flex: 1;
   padding: 35px 20px;
-  height: auto;
-  height: auto;
-  /* border: 1px solid black; */
   text-align: center;
   background-color: #f3f4f6;
 }

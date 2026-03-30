@@ -210,6 +210,10 @@ nav .both {
   height: 200px;
 }
 
+nav {
+  position: relative; /* or fixed if you want sticky */
+  z-index: 9999; /* very high so it’s on top */
+}
 .third {
   /* border: 1px solid black; */
   width: 100%;
@@ -454,6 +458,70 @@ nav .both {
   line-height: 28px;
   color: #97062d;
 }
+
+.ten {
+  background-color: #c4d7eb;
+}
+.ten .content {
+  width: 95%;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+.ten .content .content1 .content-box img {
+  max-width: 176px;
+  width: 100%;
+  height: 176px;
+}
+
+.ten .content .content1 .content-box .text-part h3 {
+  font-style:;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.ten .content .content1 .content-box .text-part p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  margin-top: 10px;
+}
+.ten .content .content1 .content-box {
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.ten .content .content1 {
+  margin-top: 20px;
+  display: flex;
+  gap: 60px;
+}
+
+.bord {
+  border: 1px solid black;
+  max-width: 90px;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin: 25px auto;
+  border-radius: 50px;
+}
+
+footer {
+  background-image: url(../images/imgi_39_background-V42PbY_R\ \(1\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ground {
+  background-image: url(../images/imgi_39_background-V42PbY_R\ \(1\).png);
+}
 @media (max-width: 1280px) {
   .con {
     display: none;
@@ -477,12 +545,16 @@ nav .both {
 }
 
 @media (max-width: 1024px) {
+  .ten .content .content1 {
+    flex-direction: column;
+    gap: 0;
+  }
 
-    .eight .written-side img{
-        max-width: 500px;
-        width: 100%;
-    }
-  .eight  .written-side {
+  .eight .written-side img {
+    max-width: 500px;
+    width: 100%;
+  }
+  .eight .written-side {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -635,16 +707,33 @@ nav .both {
   }
 }
 
-.eight .nine{
-    width: 70px;
+.eight .nine {
+  width: 70px;
 }
 @media (max-width: 768px) {
+  .ten .content .content1 .content-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ten .content .content1 .content-box {
+    padding: 10px;
+  }
   .seven .all .boxes {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seven .all .boxes .img-wrapper img {
   }
   .seven .all .boxes .box {
     width: 100%;
     max-width: 1000px;
+  }
+  .ten .content .content1 .content-box img {
+    width: 100%;
+    max-width: 400px;
   }
   .seven {
     background-color: white;
