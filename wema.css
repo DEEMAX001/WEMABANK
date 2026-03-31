@@ -619,20 +619,28 @@ nav .both {
 }
 
 .sectt {
+  width: 95%;
+  margin: 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-  gap: 1em;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
 section .cards {
+  flex: 1;
+  width: 100%;
+  /* max-width: 150px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 30px;
   /* border: 1px solid black; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 100%;
+  text-align: center;
 }
 
 section .cards a {
@@ -652,6 +660,7 @@ section .cards img {
   width: 100%;
   max-width: 56px;
   height: auto;
+  text-align: center;
 }
 
 section .part2 {
@@ -1368,11 +1377,48 @@ section .okay p {
 }
 
 .mad a {
-  display: block !important; /* force block */
+  display: block !important;
   width: 100%;
-  background-color: #f0f0f0; /* visual check */
+  background-color: #f0f0f0;
   padding: 5px;
 }
+
+.line {
+  display: flex;
+  flex-direction: column;
+}
+.line h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.line ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.line ul li {
+  /* display: block; */
+  margin-bottom: 8px;
+}
+
+.line ul li a {
+  border: 1px solid black;
+  display: block;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.line ul li a:hover {
+  color: #f0a500; /* hover highlight */
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {
